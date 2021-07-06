@@ -48,6 +48,7 @@ public class SalaController {
         return ResponseEntity.ok(atualizarSala);
     }
 
+    @DeleteMapping("/salas/{id}")
     public Map<String, Boolean> excluirSala(@PathVariable(value = "id") Long idSala) throws ResourceNotFoudException{
         Sala sala = salaRepository.findById(idSala)
                 .orElseThrow(() -> new ResourceNotFoudException("Sala não encontrada com esse id::"+idSala));
