@@ -16,7 +16,6 @@ public class Sala {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
     @Column(name = "nome")
     private String nome;
     @Column (name = "data")
