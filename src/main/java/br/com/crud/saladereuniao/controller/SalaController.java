@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController @CrossOrigin(origins = "https://gerenciadordesalaprareunicao.netlify.app")
+@RestController @CrossOrigin(origins = "https://gerenciadordesalaprareunicao.netlify.app/salas")
 @RequestMapping("/api/v1")
 public class SalaController {
 
